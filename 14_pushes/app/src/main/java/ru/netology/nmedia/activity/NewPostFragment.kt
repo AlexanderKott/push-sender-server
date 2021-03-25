@@ -19,7 +19,7 @@ class NewPostFragment : Fragment() {
     }
 
     private val viewModel: PostViewModel by viewModels(
-        ownerProducer = ::requireParentFragment
+        ownerProducer = ::requireActivity
     )
 
     override fun onCreateView(

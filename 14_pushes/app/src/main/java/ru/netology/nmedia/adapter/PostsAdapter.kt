@@ -44,6 +44,7 @@ class PostViewHolder(
             // в адаптере
             like.isChecked = post.likedByMe
             like.text = "${post.likes}"
+            sharV.text = "${post.shares}"
 
             menu.setOnClickListener {
                 PopupMenu(it.context, it).apply {
